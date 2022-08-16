@@ -18,8 +18,11 @@ def contacts
 end
 
 def remove_strawberry(contacts)
-  # your code here!
+  contacts["Freddy Mercury"][:favorite_ice_cream_flavors] = contacts["Freddy Mercury"][:favorite_ice_cream_flavors]
+   .filter {|item| item!="strawberry"}
+ contacts
+   # your code here!
 end
-
+pp remove_strawberry contacts
 # print the output to the terminal for inspection
-pp remove_strawberry(contacts)
+# pp remove_strawberry(contacts)
